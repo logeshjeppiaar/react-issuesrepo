@@ -18,7 +18,6 @@ export default function IssueProvider(props) {
     }
     const addIssue = () => {
         console.log("Add issue called...")
-        console.log("showflag:" + showAddIssueFrameFlag)
         toggleFrame(!showAddIssueFrameFlag);
     }
     const showAddIssueFrame = () => {
