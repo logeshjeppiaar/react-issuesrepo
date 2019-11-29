@@ -9,11 +9,10 @@ function App() {
         <IssuesTable />
         <IssueContext.Consumer>
           {
-          values => {
-            if (values.showAddIssueFrame)
-             return <div>==0</div>
-            else return <div>Nope</div>
-          }}
+            values => {
+              if (values.showAddIssueFrame)
+                return <div>Add Issue Component here!</div>
+            }}
         </IssueContext.Consumer>
       </IssueProvider>
     </div>

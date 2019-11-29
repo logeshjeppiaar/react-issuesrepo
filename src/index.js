@@ -5,11 +5,13 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
 import Homepage from './router-test/Homepage';
+import EditIssue from './issues-tracker/EditIssue';
 
 const routing = (
     <Router>
         <Route exact path="/home" component={Homepage}></Route>
         <Route exact path="/" component={App} />
+        <Route path="/edit/:id" component={EditIssue} />
     </Router>
 )
 
